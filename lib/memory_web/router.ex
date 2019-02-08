@@ -1,5 +1,6 @@
 defmodule MemoryWeb.Router do
   use MemoryWeb, :router
+  get "/game/:name", PageController, :game
 
   pipeline :browser do
     plug :accepts, ["html"]
